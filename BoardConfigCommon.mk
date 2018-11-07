@@ -69,13 +69,6 @@ TARGET_CAMERA_NEEDS_CLIENT_INFO := true
 # charger
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
-# Dex
-ifeq ($(HOST_OS),linux)
-  ifneq ($(TARGET_BUILD_VARIANT),eng)
-    WITH_DEXPREOPT ?= true
-  endif
-endif
-
 # Display
 TARGET_SCREEN_DENSITY := 420
 
