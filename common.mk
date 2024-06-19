@@ -69,12 +69,14 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
+    libaudioroute.vendor \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.service \
     libcodec2_hidl@1.0.vendor \
     libcodec2_vndk.vendor \
-    libcurl.vendor
+    libcurl.vendor \
+    libprocessgroup.vendor
 
 # Authsecret
 PRODUCT_PACKAGES += \
@@ -216,6 +218,10 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     VisualizationWallpapers \
     librs_jni
+
+# Media
+PRODUCT_PACKAGES += \
+    libstagefright_softomx_plugin.vendor
 
 # Netutils
 PRODUCT_PACKAGES += \
