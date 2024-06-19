@@ -73,7 +73,8 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.service \
     libcodec2_hidl@1.0.vendor \
-    libcodec2_vndk.vendor
+    libcodec2_vndk.vendor \
+    libcurl.vendor
 
 # Authsecret
 PRODUCT_PACKAGES += \
@@ -252,7 +253,9 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.secure_element@1.2.vendor
+    android.hardware.secure_element@1.2.vendor \
+    libjsoncpp.vendor \
+    libsqlite.vendor
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
