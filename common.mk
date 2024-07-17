@@ -223,6 +223,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libstagefright_softomx_plugin.vendor
 
+# Mount Point symlinks
+PRODUCT_PACKAGES += \
+    mnt_point_asusfw_symlink \
+    mnt_point_factory_symlink
+
 # Netutils
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor \
