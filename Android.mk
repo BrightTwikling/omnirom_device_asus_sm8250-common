@@ -53,15 +53,6 @@ $(SYSHELPER_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(SYSHELPER_SYMLINKS)
 
-WFD_LIB := libwfdnative.so
-WFD_SYMLINKS := $(addprefix $(TARGET_OUT_SYSTEM_EXT_APPS_PRIVILEGED)/WfdService/lib/arm64/,$(notdir $(WFD_LIB)))
-$(WFD_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
-	@echo "WFD lib link: $@"
-	@mkdir -p $(dir $@)
-	@rm -rf $@
-	$(hide) ln -sf /system_ext/lib64/$(notdir $@) $@
-ALL_DEFAULT_INSTALLED_MODULES += $(WFD_SYMLINKS)
-
 FIRMWARE_MOUNT_POINT := $(TARGET_OUT_VENDOR)/firmware_mnt
 $(FIRMWARE_MOUNT_POINT): $(LOCAL_INSTALLED_MODULE)
 	@echo "Creating $(FIRMWARE_MOUNT_POINT)"
