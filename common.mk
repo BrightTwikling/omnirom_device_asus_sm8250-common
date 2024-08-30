@@ -21,8 +21,16 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay
+
+ifeq ((findstring $(shell ls vendor/omni/overlay), CarrierConfig),)
+DEVICE_PACKAGE_OVERLAYS += \
     vendor/omni/overlay/CarrierConfig
+else
+DEVICE_PACKAGE_OVERLAYS += \
+    device/asus/sm8250-common/omni/CarrierConfig
+endif
+
 
 PRODUCT_PACKAGES += \
     FrameworksResOverlay \
