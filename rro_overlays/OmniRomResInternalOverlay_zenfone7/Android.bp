@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "OmniRomResInternalOverlay_zenfone7",
+    theme: "OmniRomResInternalOverlay_zenfone7",
+    product_specific: true,
+}

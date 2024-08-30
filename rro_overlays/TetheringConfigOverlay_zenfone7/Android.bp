@@ -15,7 +15,7 @@
 //
 
 runtime_resource_overlay {
-    name: "TetheringConfigOverlay",
-    theme: "TetheringConfigOverlay",
+    name: "TetheringConfigOverlay_zenfone7",
+    theme: "TetheringConfigOverlay_zenfone7",
     product_specific: true
 }

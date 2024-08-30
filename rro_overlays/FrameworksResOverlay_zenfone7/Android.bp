@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "FrameworksResOverlay_zenfone7",
+    theme: "FrameworksResOverlay_zenfone7",
+    product_specific: true,
+}

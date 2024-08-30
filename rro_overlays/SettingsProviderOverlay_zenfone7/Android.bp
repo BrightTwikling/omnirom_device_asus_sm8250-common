@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "SettingsProviderOverlay_zenfone7",
+    theme: "SettingsProviderOverlay_zenfone7",
+    product_specific: true,
+}

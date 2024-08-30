@@ -33,13 +33,13 @@ endif
 
 
 PRODUCT_PACKAGES += \
-    FrameworksResOverlay \
-    OmniRomResInternalOverlay \
-    SettingsOverlay \
-    SettingsProviderOverlay \
-    SystemUIOverlay \
-    TetheringConfigOverlay \
-    WifiOverlay
+    FrameworksResOverlay_zenfone7 \
+    OmniRomResInternalOverlay_zenfone7 \
+    SettingsOverlay_zenfone7 \
+    SettingsProviderOverlay_zenfone7 \
+    SystemUIOverlay_zenfone7 \
+    TetheringConfigOverlay_zenfone7 \
+    WifiOverlay_zenfone7
 
 # A/B
 AB_OTA_UPDATER := true
