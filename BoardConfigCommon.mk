@@ -169,8 +169,13 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USES_MKE2FS := true
 
 # Sepolicy
+vendor_omni_sepolicy := $(wildcard vendor/omni/sepolicy/sepolicy.mk)
+ifneq ($(vendor_omni_sepolicy),)
 include vendor/omni/sepolicy/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
+else
+include device/qcom/sepolicy_vndr/SEPolicy.mk
+endif
 
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 PRODUCT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/product/private
