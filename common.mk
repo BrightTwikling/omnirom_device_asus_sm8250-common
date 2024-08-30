@@ -344,7 +344,7 @@ PRODUCT_PACKAGES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service.zenfone7 \
+    android.hardware.wifi-service \
     hostapd \
     libavservices_minijail.vendor \
     libavservices_minijail_vendor \
