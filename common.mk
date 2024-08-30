@@ -179,6 +179,10 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
     fastbootd
 
+# Fastcharge
+PRODUCT_PACKAGES += \
+    vendor.lineage.fastcharge@1.0-service.zenfone7
+
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
