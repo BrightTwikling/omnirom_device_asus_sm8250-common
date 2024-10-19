@@ -179,7 +179,10 @@ endif
 
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 PRODUCT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/product/private
+service_contexts_exists = $(shell find device/qcom/sepolicy_vndr/legacy-um/generic/vendor/common  -name service_contexts)
+ifeq ($(service_contexts_exists),)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
+endif
 
 # Treble
 BOARD_VNDK_VERSION := current
